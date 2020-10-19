@@ -6,8 +6,8 @@ function BubbleSorting(lst){
         for (let i = 0; i < lstSort.length-round; i++){
             if (lstSort[i] > lstSort[i+1]){
                 temp = lst[i];
-                lst.splice(i, 2, lst[i+1]);
-                lst.splice(i+1, 0, temp);
+                lstSort.splice(i, 2, lstSort[i+1]);
+                lstSort.splice(i+1, 0, temp);
             }
         }
         round++;
